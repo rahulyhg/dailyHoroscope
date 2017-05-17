@@ -1,0 +1,187 @@
+//mixins and variables//////////////////////////////////////////////////
+@mixin vAlign($tAlign){
+  .outer {
+    text-align: $tAlign;
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+}
+
+@mixin bDimensions($w){
+  display: inline-block;
+  width: $w;
+  height: 700px;
+}
+
+@mixin rotateSigns($xDegrees){
+  padding: 5px;
+  transform: rotate((30deg*$xDegrees)) translate(300px) rotate(-(30deg*$xDegrees));
+}
+///////////////////////////////////////////////////////////////////////
+#backgroundContainer{
+  width: 100%;
+  height: 100vh;
+  background-color: #b09090;
+}
+//circle///////////////////////////////////////////////////////////////
+#circle{
+  @include vAlign(right);  
+}
+
+#backgroundCircle{
+  @include bDimensions(700px);
+  text-align: center;
+  position: relative;
+  right: 50px;
+  background-color: black;
+  -webkit-border-radius: 50%;
+  #innerCircle{
+    width: 700px;
+    height: 700px;
+    padding: 150px;
+    position: relative;
+    top: 0px;
+    left: 0px;  
+    color: #dddede;
+    .outer {
+      text-align: center;
+      display: table;
+      position: inherit;
+      height: 100%;
+      width: 100%;
+    }
+    
+    .middle {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .inner {
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+      img{
+        width: 400px;
+        height: auto;
+      }
+    }
+  }
+}
+
+.zSign{
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    top: 43%;
+    left: 44%;
+    &#aquarius{  
+      @include rotateSigns(0);
+    }
+    &#pisces{
+      @include rotateSigns(1);
+    }
+    &#aries{
+      @include rotateSigns(2);
+    }
+    &#taurus{
+      @include rotateSigns(3);
+    }
+    &#gemini{
+      @include rotateSigns(4);
+    }
+    &#cancer{
+      @include rotateSigns(5);
+    }
+    &#leo{
+      @include rotateSigns(6);
+    }
+    &#virgo{
+      @include rotateSigns(7);
+    }
+    &#libra{
+      @include rotateSigns(8);
+    }
+    &#scorpio{
+      @include rotateSigns(9);
+    }
+    &#sagittarius{
+      @include rotateSigns(10);
+    }
+    &#capricorn{
+      @include rotateSigns(11);
+    }
+}
+/////////////////////////////////////////////////////////////////////
+
+//left content////////////////////////////////////////////////
+#left{
+  @include vAlign(left); 
+  .inner{
+    height: 50%;
+    background-color: #fff;
+  }
+}
+
+#leftContent{
+  width: 45%;
+  text-align: center;
+  position: relative;
+  height: 100%;
+  @include vAlign(center);
+  .inner{
+    height: auto;
+    width: 475px;
+    padding-left: 30px;
+    p{
+      text-align: left;
+    }
+  }
+}
+
+.blackLine{
+  background-color: black;
+  &.horizontal{
+    height: 10px;
+    width: 100%;
+  }
+  &.vertical{
+    height: 100vh;
+    width: 10px;
+  }
+  &.top{
+    position: absolute;
+    top: 130px;
+  }
+  &.bottom{
+    position: absolute;
+    bottom: 130px
+  }
+  &.right1{
+    position: absolute;
+    right: 360px;
+  }
+  &.right2{
+    position:absolute;
+    right: 440px;
+  }
+}
+
+#reset{
+  position: absolute;
+  top: 500px;
+  left: 300px;
+  z-index: 1;
+}

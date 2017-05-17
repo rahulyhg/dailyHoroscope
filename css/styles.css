@@ -1,0 +1,166 @@
+#backgroundContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #b09090; }
+
+#circle .outer {
+  text-align: right;
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+#circle .middle {
+  display: table-cell;
+  vertical-align: middle; }
+#circle .inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto; }
+
+#backgroundCircle {
+  display: inline-block;
+  width: 700px;
+  height: 700px;
+  text-align: center;
+  position: relative;
+  right: 50px;
+  background-color: black;
+  -webkit-border-radius: 50%; }
+  #backgroundCircle #innerCircle {
+    width: 700px;
+    height: 700px;
+    padding: 150px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: #dddede; }
+    #backgroundCircle #innerCircle .outer {
+      text-align: center;
+      display: table;
+      position: inherit;
+      height: 100%;
+      width: 100%; }
+    #backgroundCircle #innerCircle .middle {
+      display: table-cell;
+      vertical-align: middle; }
+    #backgroundCircle #innerCircle .inner {
+      margin-left: auto;
+      margin-right: auto;
+      width: auto; }
+      #backgroundCircle #innerCircle .inner img {
+        width: 400px;
+        height: auto; }
+
+.zSign {
+  width: 80px;
+  height: 100px;
+  position: absolute;
+  top: 43%;
+  left: 44%; }
+  .zSign#aquarius {
+    padding: 5px;
+    transform: rotate(0deg) translate(300px) rotate(0deg); }
+  .zSign#pisces {
+    padding: 5px;
+    transform: rotate(30deg) translate(300px) rotate(-30deg); }
+  .zSign#aries {
+    padding: 5px;
+    transform: rotate(60deg) translate(300px) rotate(-60deg); }
+  .zSign#taurus {
+    padding: 5px;
+    transform: rotate(90deg) translate(300px) rotate(-90deg); }
+  .zSign#gemini {
+    padding: 5px;
+    transform: rotate(120deg) translate(300px) rotate(-120deg); }
+  .zSign#cancer {
+    padding: 5px;
+    transform: rotate(150deg) translate(300px) rotate(-150deg); }
+  .zSign#leo {
+    padding: 5px;
+    transform: rotate(180deg) translate(300px) rotate(-180deg); }
+  .zSign#virgo {
+    padding: 5px;
+    transform: rotate(210deg) translate(300px) rotate(-210deg); }
+  .zSign#libra {
+    padding: 5px;
+    transform: rotate(240deg) translate(300px) rotate(-240deg); }
+  .zSign#scorpio {
+    padding: 5px;
+    transform: rotate(270deg) translate(300px) rotate(-270deg); }
+  .zSign#sagittarius {
+    padding: 5px;
+    transform: rotate(300deg) translate(300px) rotate(-300deg); }
+  .zSign#capricorn {
+    padding: 5px;
+    transform: rotate(330deg) translate(300px) rotate(-330deg); }
+
+#left .outer {
+  text-align: left;
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+#left .middle {
+  display: table-cell;
+  vertical-align: middle; }
+#left .inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto; }
+#left .inner {
+  height: 50%;
+  background-color: #fff; }
+
+#leftContent {
+  width: 45%;
+  text-align: center;
+  position: relative;
+  height: 100%; }
+  #leftContent .outer {
+    text-align: center;
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+  #leftContent .middle {
+    display: table-cell;
+    vertical-align: middle; }
+  #leftContent .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto; }
+  #leftContent .inner {
+    height: auto;
+    width: 475px;
+    padding-left: 30px; }
+    #leftContent .inner p {
+      text-align: left; }
+
+.blackLine {
+  background-color: black; }
+  .blackLine.horizontal {
+    height: 10px;
+    width: 100%; }
+  .blackLine.vertical {
+    height: 100vh;
+    width: 10px; }
+  .blackLine.top {
+    position: absolute;
+    top: 130px; }
+  .blackLine.bottom {
+    position: absolute;
+    bottom: 130px; }
+  .blackLine.right1 {
+    position: absolute;
+    right: 360px; }
+  .blackLine.right2 {
+    position: absolute;
+    right: 440px; }
+
+#reset {
+  position: absolute;
+  top: 500px;
+  left: 300px;
+  z-index: 1; }
+
+/*# sourceMappingURL=styles.css.map */
